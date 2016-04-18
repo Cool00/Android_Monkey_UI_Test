@@ -1,0 +1,62 @@
+speed = 1.0
+start data >>
+# 进入“登录”“注册”选择界面
+LaunchActivity(com.tencent.mobileqq, com.tencent.mobileqq.activity.RegisterGuideActivity)
+UserWait(5000)
+# 单击“登录”按钮
+DispatchPointer(0,0,0,16,1088,0,0,0,0,0,0,0)
+DispatchPointer(1,1,1,16,1088,0,0,0,0,0,0,0)
+UserWait(200)
+
+# 单击“账号”文本框
+DispatchPointer(0,0,0,16,330,0,0,0,0,0,0,0)
+DispatchPointer(1,1,1,16,330,0,0,0,0,0,0,0)
+UserWait(200)
+# 输入QQ号：“******”
+DispatchPress(KEYCODE_1)
+UserWait(200)
+DispatchPress(KEYCODE_2)
+UserWait(200)
+DispatchPress(KEYCODE_3)
+UserWait(200)
+DispatchPress(KEYCODE_4)
+UserWait(200)
+DispatchPress(KEYCODE_5)
+UserWait(200)
+DispatchPress(KEYCODE_6)
+UserWait(200)
+DispatchPress(KEYCODE_7)
+UserWait(200)
+DispatchPress(KEYCODE_8)
+UserWait(200)
+
+# 单击“密码”文本框
+DispatchPointer(0,0,0,16,401,0,0,0,0,0,0,0)
+DispatchPointer(1,1,1,16,401,0,0,0,0,0,0,0)
+UserWait(200)
+
+# 输入密码：“******”
+DispatchPress(KEYCODE_1)
+UserWait(200)
+DispatchPress(KEYCODE_2)
+UserWait(200)
+DispatchPress(KEYCODE_3)
+UserWait(200)
+DispatchPress(KEYCODE_4)
+UserWait(200)
+DispatchPress(KEYCODE_5)
+UserWait(200)
+DispatchPress(KEYCODE_6)
+UserWait(200)
+DispatchPress(KEYCODE_7)
+UserWait(200)
+DispatchPress(KEYCODE_8)
+UserWait(200)
+
+# 单击“登录”按钮
+#DispatchPointer(0,0,0,32,486,0,0,0,0,0,0,0)
+#DispatchPointer(1,1,1,32,486,0,0,0,0,0,0,0)
+DispatchPress(KEYCODE_ENTER)
+UserWait(3000)
+
+WriteLog()
