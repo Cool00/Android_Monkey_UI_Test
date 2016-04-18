@@ -14,7 +14,8 @@
    *      captureDispatchFlip(true)  
    *      ...  
    */    
- 由此可知，我们可以通过编写script来实现使用monkey进行指定操作。
+ 
+由此可知，我们可以通过编写script来实现使用monkey进行指定操作。
 
 首先，我们需要获取被测程序的包名和lanch activity。
 
@@ -37,6 +38,7 @@ DispatchPointer(downTime, eventTime,action, x, y, pressure, size, metaState, xPr
 然后输入命令： 
 
   adb push D:\qqtest.script /sdcard/
+  
   adb shell monkey -f /sdcard/qqtest.script -v 1
 
 其中1为执行脚本次数。 
